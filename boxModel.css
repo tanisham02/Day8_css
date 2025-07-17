@@ -1,0 +1,33 @@
+1. content-box (default)
+- width and height include only content.
+-Padding and border are added outside this size.
+
+box-sizing: content-box;
+width: 100px;
+padding: 10px;
+border: 5px solid black;
+/* Total width = 100 + 10*2 + 5*2 = 130px */
+
+
+2. border-box
+- width and height include content + padding + border.
+- Makes layout easier and more predictable.
+- border-box is recommended for layout consistency.
+
+box-sizing: border-box;
+width: 100px;
+padding: 10px;
+border: 5px solid black;
+/* Total width = 100px (everything inside it) */
+
+
+## OUTLINE VS BORDER:
+
+| Feature         | `border`                       | `outline`                            |
+| --------------- | ------------------------------ | ------------------------------------ |
+| Part of Box?    | Yes (affects layout/box size)  | No (doesn’t affect layout)           |
+| Position        | Inside the margin              | Outside the border                   |
+| Customization   | Color, width, style, radius    | Only color, width, and style         |
+| Rounded corners | Yes (`border-radius`)          | ❌ No rounding                        |
+| Use case        | Visual structure, element edge | Accessibility focus ring, highlights |
+
