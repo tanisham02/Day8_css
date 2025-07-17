@@ -1,0 +1,29 @@
+ div {
+  background-color: #222;
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+Background Control Properties
+1. background-repeat
+Controls if/how the background image repeats.
+
+background-repeat: repeat;      /* default: both directions */
+background-repeat: no-repeat;   /* no repeating */
+background-repeat: repeat-x;    /* repeat horizontally */
+background-repeat: repeat-y;    /* repeat vertically */
+
+2. background-size
+Sets the size of the background image.
+
+background-size: cover;    /* cover the whole area */
+background-size: contain;  /* fit within the area */
+background-size: 100px 50px; /* custom width and height */
+
+3. background-position
+Sets the starting position of the background image.
+background-position: top left;
+background-position: center center;
+background-position: 50% 100%; /* horizontal 50%, vertical 100% */
